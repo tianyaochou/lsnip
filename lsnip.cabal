@@ -1,0 +1,36 @@
+cabal-version:       2.2
+
+name:                lsnip
+version:             0.1.0.0
+-- synopsis:
+-- description:
+homepage:            https://github.com/tianyaochou/lsnip#readme
+license:             BSD-3-Clause
+license-file:        LICENSE
+author:              Tianyao Chou
+maintainer:          hi@tianyao.ch
+copyright:           2024 Tianyao Chou
+category:            Web
+build-type:          Simple
+extra-source-files:  README.md
+                     CHANGELOG.md
+
+executable lsnip
+  hs-source-dirs:      src
+  main-is:             Main.hs
+  default-language:    Haskell2010
+  build-depends:       base >= 4.7 && < 5,
+                       extra, optparse-applicative,
+                       lsp >= 2.1 && < 3,
+                       lsp-types >= 2.1 && < 3,
+                       text, lens, transformers, co-log-core,
+                       toml-parser
+  ghc-options:         -Wall
+                       -Wcompat
+                       -Widentities
+                       -Wincomplete-record-updates
+                       -Wincomplete-uni-patterns
+                       -Wmissing-export-lists
+                       -Wmissing-home-modules
+                       -Wpartial-fields
+                       -Wredundant-constraints
