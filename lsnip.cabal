@@ -10,7 +10,7 @@ license-file:        LICENSE
 author:              Tianyao Chou
 maintainer:          hi@tianyao.ch
 copyright:           2024 Tianyao Chou
-category:            Web
+category:            program, development
 build-type:          Simple
 extra-source-files:  README.md
                      CHANGELOG.md
